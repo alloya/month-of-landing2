@@ -1,5 +1,5 @@
 .bikes-list {
-    padding: 0 120px 60px 0;
+    padding: 80px 120px 60px 0;
     margin-bottom: 80px;
     @include mobile {
       padding: 40px 0 0 0;
@@ -20,7 +20,6 @@
         display: grid;
         grid-template-columns: repeat(3, min-content);
         column-gap: 40px;
-        padding-top: 85px;
         @include mobile {
           padding-top: 0;
           padding-left: 0;
