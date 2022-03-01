@@ -41,8 +41,9 @@
   
   &__button {
     @include background-transition(var(--color-accent), #319E75);
-    @include font-size(18, 18);
+    @include font-size(14, 18, 600);
     @include cursor-pointer;
+    font-family: $font;
     padding: 16px 10px;
     width: 180px;
     text-align: center;

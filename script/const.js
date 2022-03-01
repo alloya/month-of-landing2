@@ -12,3 +12,4 @@ const selectBikeOptions = document.querySelector('.bikes-options');
 const prevArrowMobile = document.querySelector('.arrow_prev.d-md-none');
 const nextArrowMobile = document.querySelector('.arrow_next.d-md-none');
 const bikeDots = document.querySelectorAll('.bikes-slider-dot');
+const submitEmailButton = document.querySelector('.footer__form');

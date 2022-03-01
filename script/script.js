@@ -94,6 +94,13 @@ function toggleTheme() {
   }
 })();
 
+function submitEmail(evt) {
+  evt.preventDefault();
+  if (submitEmailButton.firstElementChild.value.length) {
+    submitEmailButton.firstElementChild.value = 'Круто!';
+  }
+}
+
 themeSwitcher.addEventListener('click', toggleTheme);
 themeSwitcherMobile.addEventListener('click', toggleTheme);
 
@@ -107,4 +114,6 @@ bikeDots.forEach(element => {
   element.addEventListener('click', () => {
     showBikesSlide(element.getAttribute('data-id'), getCurrentTerrainSlides());
   })
-})
+});
+
+submitEmailButton.addEventListener('submit', submitEmail);
