@@ -1,0 +1,17 @@
+.theme {
+    &-light {
+        --color-primary: #F4F4F4;
+        --color-secondary: #EFEFEF;
+        --color-accent: #24B47E;
+        --color-picture-back: #F4F4F4;
+        --font-color: #151515;
+      }
+      
+      &-dark {
+        --color-primary: #333333;
+        --color-secondary: #2F2F2F;
+        --color-accent: #24B47E;
+        --color-picture-back: #F4F4F4;
+        --font-color: #FFFFFF;
+      }
+}

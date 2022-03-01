@@ -1,0 +1,14 @@
+const prevArrow = document.querySelector(".arrow_prev.d-sm-none");
+const nextArrow = document.querySelector(".arrow_next.d-sm-none");
+const slides = document.querySelectorAll(".carousel__item");
+const bikefilters = document.querySelectorAll(".bikes-list__item");
+const bikeSlides = document.querySelectorAll(".bikes-list__slide");
+const themeSwitcher = document.querySelector(".footer .toggle");
+const themeSwitcherMobile = document.querySelector(".toggle");
+const menuLinks = document.querySelectorAll('.nav-item');
+const menuInput = document.querySelector('#menu-btn');
+const bikesOptions = document.querySelectorAll('.bikes-option');
+const selectBikeOptions = document.querySelector('.bikes-options');
+const prevArrowMobile = document.querySelector('.arrow_prev.d-md-none');
+const nextArrowMobile = document.querySelector('.arrow_next.d-md-none');
+const bikeDots = document.querySelectorAll('.bikes-slider-dot');

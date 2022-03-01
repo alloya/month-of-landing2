@@ -1,0 +1,95 @@
+.section {
+    display: grid;
+    grid-template-columns: 460px 610px;
+    column-gap: 250px;
+    grid-template-areas: 
+      'title picture';
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'title'
+      'picture'
+      'info';
+    }
+ 
+  
+  &__title {
+    @include font-size(55, 60, 700);
+    letter-spacing: -0.5px;
+    margin-bottom: 50px;
+    margin: 0;
+    grid-area: title;
+    @include mobile {
+      @include font-size(32, 40, 700);
+      margin-top: 30px;
+    }
+  }
+  
+  &__title_intro {
+    padding-top: 80px;
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 250px;
+    grid-area: title; 
+    @include mobile {
+      grid-area: info;
+      padding-top: 40px;
+    }
+  }
+  
+  &__info {
+    width: 100%;
+    max-width: 460px;
+    @include mobile {
+    }
+  }
+  
+  &__description {
+    @include font-size(18, 28);
+    opacity: 0.7;
+    margin: 0;
+    @include mobile {
+      @include font-size(12, 18);
+    }
+  }
+  
+  &__intro {
+    @include mobile {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__title_trainings {
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+  
+  &__wrapper_trainings {
+    padding-top: 100px;
+    @include mobile {
+      padding-top: 50px;
+    }
+  }
+
+  &__info_carousel {
+    @include mobile {
+      order: 3;
+    }
+  }
+  
+  &_title_bikes-list {
+    padding-top: 80px;
+    @include mobile {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}

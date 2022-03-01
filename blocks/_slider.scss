@@ -1,0 +1,16 @@
+.slider {
+    display: flex;
+  
+  &_header {
+    margin: auto;
+    width: 153px;
+  }
+
+  & input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: url(../img/cursor.svg), auto;
+  }
+}

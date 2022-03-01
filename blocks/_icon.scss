@@ -1,0 +1,15 @@
+.icon {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  &__sun {
+    background-image: url(../img/sun.svg);
+  }
+  
+  &__moon {
+    background-image: url(../img/moon.svg);
+  }
+}
