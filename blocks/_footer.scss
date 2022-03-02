@@ -94,6 +94,8 @@
     font-family: $font;
     opacity: 0;
     transition: 0.5s;
+    background-color: var(--color-secondary);
+    color: var(--font-color);
   }
   
   &__logo {

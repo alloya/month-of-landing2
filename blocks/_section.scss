@@ -53,15 +53,14 @@
     }
   }
   
-  &__info {
+  &-info {
     width: 100%;
-    // max-width: 460px;
     @include desktop {
       max-width: 460px;
     }
   }
   
-  &__description {
+  &-description {
     @include font-size(18, 28);
     opacity: 0.7;
     margin: 0;
@@ -95,7 +94,7 @@
     }
   }
 
-  &__info_carousel {
+  &-info_carousel {
     @include mobile {
       order: 3;
     }

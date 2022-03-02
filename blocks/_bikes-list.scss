@@ -31,7 +31,7 @@
         }
       }
       
-      &__item {
+      &-item {
         @include font-size(18, 28, 400);
         cursor: url(../img/cursor.svg), auto;
         text-align: right;
@@ -64,20 +64,14 @@
         filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
         height: 100%;
         width: 100%;
-        // max-height: 380px;
-        // max-width: 380px;
         object-fit: contain;
         box-sizing: border-box;
         cursor: url(../img/cursor.svg), auto;
-        @include mobile {
-          // max-height: 306px;
-          // max-width: 284px;
-        }
       }
       
       &__model {
         @include font-size(18, 22, 600);
-        color: var(--font-color);
+        color: var(--font-dark-color);
         margin-top: 22px;
         cursor: url(../img/cursor.svg), auto;
         @include mobile {
@@ -94,7 +88,7 @@
         }
     }
     
-    &_dot-wrapper {
+    &-dot-wrapper {
       text-align: center;
       margin-top: 20px;
       font-size: 0;
@@ -123,7 +117,7 @@
     }
 }
 
-.bike__link {
+.bike-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
