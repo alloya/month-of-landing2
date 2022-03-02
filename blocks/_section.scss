@@ -1,7 +1,7 @@
 .section {
     display: grid;
-    grid-template-columns: 460px 610px;
-    column-gap: 250px;
+    grid-template-columns: 35% 46%;
+    column-gap: 19%;
     grid-template-areas: 
       'title picture';
     @include mobile {
@@ -14,7 +14,7 @@
     }
  
   
-  &__title {
+  &-title {
     @include font-size(55, 60, 700);
     letter-spacing: -0.5px;
     margin-bottom: 50px;
@@ -24,11 +24,17 @@
       @include font-size(32, 40, 700);
       margin-top: 30px;
     }
+    @include tablet {
+      @include font-size(40, 45, 700);
+    }
   }
   
-  &__title_intro {
+  &-title_intro {
     padding-top: 80px;
     @include mobile {
+      padding-top: 0;
+    }
+    @include tablet {
       padding-top: 0;
     }
   }
@@ -42,12 +48,16 @@
       grid-area: info;
       padding-top: 40px;
     }
+    @include tablet {
+      padding-top: 130px;
+    }
   }
   
   &__info {
     width: 100%;
-    max-width: 460px;
-    @include mobile {
+    // max-width: 460px;
+    @include desktop {
+      max-width: 460px;
     }
   }
   
@@ -58,9 +68,12 @@
     @include mobile {
       @include font-size(12, 18);
     }
+    @include tablet {
+      @include font-size(14, 20);
+    }
   }
   
-  &__intro {
+  &_intro {
     @include mobile {
       padding-bottom: 80px;
     }
@@ -76,6 +89,9 @@
     padding-top: 100px;
     @include mobile {
       padding-top: 50px;
+    }
+    @include tablet {
+      padding-top: 70px;
     }
   }
 
