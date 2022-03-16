@@ -1,0 +1,9 @@
+.body {
+    font-family: $font;
+    background-color: var(--color-primary);
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    color: var(--font-color);
+    box-sizing: border-box;
+  }

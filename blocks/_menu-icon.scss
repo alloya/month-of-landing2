@@ -1,0 +1,12 @@
+.menu-icon {
+    @include cursor-pointer;
+    display: none;
+    
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    @include mobile {
+      display: inline-block;
+    }
+  }

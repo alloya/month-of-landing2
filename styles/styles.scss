@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.d-sm-none {
+    display: inline-block;
+    @include mobile {
+      display: none;
+    }
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .d-sm-block {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }

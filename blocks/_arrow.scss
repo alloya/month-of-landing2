@@ -1,0 +1,36 @@
+.arrow {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    user-select: none;
+    @include cursor-pointer;
+    transition: opacity 0.6s ease;
+    background-position: center;
+    background-size: cover;
+    &:hover {
+      opacity: 0.6;
+    }
+  
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+
+  &-wrapper {
+    position: absolute;
+    margin-top: 36px;
+    right: 18px;
+  }
+  
+  &_prev {
+    background-image: url(../img/arrow-left.svg);
+    margin-right: 20px;
+    @include mobile {
+      margin-left: 10px;
+    }
+  }
+  
+  &_next {
+    background-image: url(../img/arrow-right.svg);
+  }
+}

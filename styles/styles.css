@@ -1,0 +1,21 @@
+.d-sm-none {
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-sm-block {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .d-sm-block {
+    display: block;
+  }
+}/*# sourceMappingURL=styles.css.map */
